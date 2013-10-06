@@ -1,0 +1,143 @@
+\documentclass[12pt]{report}
+
+% For \text environment
+\usepackage{amsmath}
+
+% I really hate end-of-line hyphens
+\hyphenpenalty=10000
+\tolerance=2000
+
+% Set up link options and PDF info
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	urlcolor=black,
+	pdftitle=Jason Alan Palmer's resume,
+	pdfauthor=Jason Alan Palmer,
+	pdfcreator=,
+	pdfproducer=
+}
+
+% Default list spacing is too much
+\usepackage{enumitem}
+\setlist{nolistsep,leftmargin=0.3in,rightmargin=0in}
+
+% Standard US margins
+\usepackage[margin=1in]{geometry}
+
+% Smaller bullet points
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\huge$\cdot$}}$}
+
+% Don't indent paragraphs
+\setlength{\parindent}{0pt}
+
+\pagestyle{empty}
+
+
+\begin{document}
+
+% Just name and email, since this is online
+\textbf{\large Jason Alan Palmer} \hfill \href{mailto:jalanpalmer@gmail.com}{jalanpalmer@gmail.com}
+
+\rule{\textwidth}{1pt}
+
+\subsection*{Work}
+
+Python Developer (on contract) \hfill 2013 -- ~~~~~~ \\
+Nationwide Insurance           \hfill Columbus, Ohio
+\begin{itemize}
+\item Developing automation for Linux server patching \\
+\end{itemize}
+
+Software Engineer, Enterprise Content Management \hfill 2012 -- 2013 \\
+IBM                                              \hfill Columbus, Ohio
+\begin{itemize}
+\item Installed, set up, and managed application servers (WebSphere, WebLogic, JBoss), databases (DB2, Oracle), and directory servers (Tivoli).
+\item Tested Java EE applications (Content Engine, Process Engine, Atlas), including automated test development and performance testing. \\
+\end{itemize}
+
+Research and Teaching Associate, Electrical and Computer Engineering \hfill 2009 -- 2012 \\
+Ohio State University                                                \hfill Columbus, Ohio
+\begin{itemize}
+\item Optimized medically relevant EPR (electron paramagnetic resonance) experiments.
+\item Published two papers on our work (listed below).
+\item Taught senior undergraduate labs: communication laboratory, microcontroller laboratory. \\
+\end{itemize}
+
+Software Quality Assurance                              \hfill 2007 -- 2009 \\
+Chemical Abstracts Service                              \hfill Columbus, Ohio
+\begin{itemize}
+\item Wrote and executed test procedures.
+\item Disassembled with OllyDbg to discover a password recovery vulnerability.
+\item Wrote scripts (Bash, Scheme) to intelligently convert JPEG spectrums to PNG, resulting in 93\% size reduction on average.
+\end{itemize}
+
+\subsection*{Skills}
+\begin{itemize}
+\item Programming: Bash, C, C++, Java, Lisp, MATLAB, Octave, Perl, Python; experience with assembly and microcontrollers; interest in good practices regarding modularity, portability, and version control (Git, Mercurial, RTC, SVN). Samples: \href{http://github.com/jalan}{github.com/jalan}
+\item Analysis: math, statistics, optimization, estimation, pattern recognition, machine learning.
+\item Web development: CSS, HTML, JavaScript, Django web framework.
+\item Research: intelligently approach new and open-ended problems, quickly get up to speed in new fields.
+\item Operating systems: Linux (RHEL, Slackware, Gentoo), Solaris, AIX, HP-UX, Windows.
+\item Documentation: ability to write clear articles and presentations; experience with \LaTeX, image creation with SVG, and editing.
+\item Signal processing: digital filtering, image enhancement, spectrum analysis.
+\item Quality assurance: break software and create detailed bug reports, suggest and implement improvements, automate testing, evaluate performance and reliability.
+\end{itemize}
+
+\subsection*{Education}
+\begin{itemize}
+\item MS, Electrical and Computer Engineering \hfill 2012 \\
+Ohio State University                         \hfill Columbus, Ohio \\
+3.90/4 \\
+
+\item BS, Electrical and Computer Engineering \hfill 2009 \\
+Ohio State University                         \hfill Columbus, Ohio \\
+3.94/4 (Summa cum laude) \\
+
+\item Graduate Record Exams                   \hfill 2008 \\
+Verbal:       700 ($97^\text{th}$ percentile) \\
+Quantitative: 800 ($94^\text{th}$ percentile, perfect score) \\
+Writing:      5.0 ($77^\text{th}$ percentile) \\
+\end{itemize}
+
+My education includes graduate-level coursework in
+\begin{itemize}
+\item Electrical engineering (image processing, communications, random signal analysis)
+\item Computer engineering (digital logic, interfacing and protocols)
+\item Computer science (numerical methods, machine learning, pattern recognition)
+\item Mathematics (vector spaces)
+\item Statistics (applied regression analysis)
+\item Linguistics (mathematical methods)
+\end{itemize}
+
+\subsection*{Publications}
+\begin{itemize}
+\item ``Dual-scan acquisition for accelerated continuous-wave EPR oximetry,''
+Jason Palmer, Lee C Potter, David H Johnson, Jay L Zweier, Rizwan Ahmad.
+{\it Journal of Magnetic Resonance}, 2012.
+DOI: \href{http://dx.doi.org/10.1016/j.jmr.2012.05.021}{10.1016/j.jmr.2012.05.021}.
+PubMed: \href{http://www.ncbi.nlm.nih.gov/pubmed/22820009}{22820009}
+\item ``Optimization of magnetic field sweep and field modulation amplitude for continuous-wave EPR oximetry,''
+Jason Palmer, Lee C Potter, Rizwan Ahmad.
+{\it Journal of Magnetic Resonance}, 2011.
+DOI: \href{http://dx.doi.org/10.1016/j.jmr.2011.01.013}{10.1016/j.jmr.2011.01.013}.
+PubMed: \href{http://www.ncbi.nlm.nih.gov/pubmed/21334232}{21334232}
+\end{itemize}
+
+\subsection*{Community}
+\begin{itemize}
+\item Minor contributor to open-source projects (mainly via bug reporting)               \hfill 2007 -- ~~~~~~~
+\item Member, IEEE                                                                       \hfill 2007 -- ~~~~~~~
+\item Member, IEEE Computer Society                                                      \hfill 2012 -- ~~~~~~~
+\item Project Gutenberg Distributed Proofreaders                                         \hfill 2007 -- 2008
+\item Maintenance of the IPS Lab website: \href{http://ece.osu.edu/ips}{ece.osu.edu/ips} \hfill 2010 -- 2012
+\item Rebuilding Together Central Ohio                                                   \hfill 2013
+\end{itemize}
+
+\subsection*{Honors}
+\begin{itemize}
+\item University Fellow, Ohio State University \hfill 2009 -- 2010
+\item National Merit Scholar                   \hfill 2005
+\end{itemize}
+
+\end{document}

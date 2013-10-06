@@ -1,0 +1,13 @@
+# backup files from some editors
+*~
+
+# vim swap files
+*.swp
+
+# intermediate LaTeX files
+*.out
+*.log
+*.aux
+
+# final output
+*.pdf
