@@ -1,9 +1,5 @@
-.PHONY: clean
-
-resume.pdf: resume.out
+resume.pdf: resume.tex
 	pdflatex resume.tex
-
-resume.out: resume.tex
 	pdflatex resume.tex
 
 clean:
