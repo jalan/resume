@@ -12,18 +12,16 @@
 	pdftitle=Jason Alan Palmer's resume,
 	pdfauthor=Jason Alan Palmer,
 	pdfcreator=,
-	pdfproducer=
+	pdfproducer=,
 }
 
-% Default list spacing is too much
-\usepackage{enumitem}
-\setlist{nolistsep,leftmargin=0.3in,rightmargin=0in}
+\usepackage{tabularx}
 
 % Standard margins
 \usepackage[margin=1in]{geometry}
 
-% Smaller bullet points
-\renewcommand{\labelitemi}{$\vcenter{\hbox{\huge$\cdot$}}$}
+% Small bullet points
+\renewcommand{\bullet}{$\vcenter{\hbox{~\huge$\cdot$~}}$}
 
 % Don't indent paragraphs
 \setlength{\parindent}{0pt}
@@ -41,100 +39,93 @@
 
 \subsection*{Work Experience}
 
-Senior Software Engineer, UberResearch \hfill Bethesda, MD ~~~~ 2017--~~~~~~ \\
-Working on-site for the National Heart, Lung, and Blood Institute (NHLBI)
-\begin{itemize}
-\item Develop web applications, web services, and data pipelines
-\item Docker, PostgreSQL, Pyramid
-\\
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
+\textbf{Senior Software Engineer}, UberResearch && Bethesda, MD && 2015--now \\
+\end{tabularx}
+On-site at the National Heart, Lung, and Blood Institute (NHLBI) \\
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Developing and maintaining a custom install of the Reviewer Finder web application along with associated web services and data pipelines. \\
+Creating a new document enrichment web service. \\
+\end{tabularx}
+On-site at the NIH's Office of Portfolio Analysis (OPA) \\
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Developed web applications, including OPA's first public app, iCite (\href{https://icite.od.nih.gov}{icite.od.nih.gov}), which includes 100\% automated test coverage on the backend. \\
+Implemented the Relative Citation Ratio, a field-normalized metric for assessing impact of scientific articles, now in use at NIH and across Digital Science companies. \\
+\end{tabularx}
 
-Senior Software Engineer, UberResearch \hfill Bethesda, MD ~~~~ 2015--2017 \\
-Worked on-site for the National Institutes of Health's Office of Portfolio Analysis (OPA)
-\begin{itemize}
-\item Developed web applications, including OPA's first public app, iCite (\href{https://icite.od.nih.gov}{icite.od.nih.gov}), which includes 100\% automated test coverage on the backend
-\item Implemented the Relative Citation Ratio, a field-normalized metric for assessing impact of scientific articles, now in use by all Digital Science companies
-\\
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
+\textbf{Software Engineer}, Nationwide Insurance (contract) && Columbus, OH && 2013--2015 \\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Automated updates for thousands of Red Hat Enterprise Linux servers. \\
+Control via SSH, with no software installation required on the remote hosts. \\
+Equivalent functionality via command-line tools or a web app, including REST API. \\
+\end{tabularx}
 
-Software Engineer, Nationwide Insurance (contract) \hfill Columbus, OH ~~~~ 2013--2015 \\
-Developed tools to automate updates for thousands of Red Hat Enterprise Linux servers
-\begin{itemize}
-\item Control via SSH (paramiko), with no software installation required on the remote hosts
-\item Equivalent functionality via command-line tools or a web app, including REST API
-\item Django, Redis, Celery, MySQL, Bootstrap, JQuery, Handlebars
-\\
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
+\textbf{Software Engineer}, IBM && Columbus, OH && 2012--2013 \\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Installed, set up, and managed application servers, databases, and directory servers. \\
+Tested applications, including automation development and performance testing. \\
+\end{tabularx}
 
-Software Engineer, IBM \hfill Columbus, OH ~~~~ 2012--2013
-\begin{itemize}
-\item Installed, set up, and managed application servers, databases, and directory servers.
-\item Tested applications, including automation development and performance testing.
-\\
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
+\textbf{Research Associate}, Ohio State University && Columbus, OH && 2009--2012 \\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Optimized medically relevant EPR (electron paramagnetic resonance) experiments. \\
+Taught undergraduate labs: communication laboratory, microcontroller laboratory. \\
+\end{tabularx}
 
-Research Associate, Ohio State University \hfill Columbus, OH ~~~~ 2009--2012
-\begin{itemize}
-\item Optimized medically relevant EPR (electron paramagnetic resonance) experiments.
-\item Taught senior undergraduate labs: communication laboratory, microcontroller laboratory.
-\\
-\end{itemize}
-
-Software Quality Assurer, Chemical Abstracts Service \hfill Columbus, OH ~~~~ 2007--2009
-\begin{itemize}
-\item Disassembled with OllyDbg to discover a password recovery vulnerability.
-\item Wrote scripts (Bash, Scheme) to intelligently convert JPEG spectrums to PNG, resulting in 93\% size reduction on average.
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
+\textbf{Software Tester}, Chemical Abstracts Service && Columbus, OH && 2007--2009 \\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Disassembled with OllyDbg to discover a password recovery vulnerability. \\
+Wrote scripts (Bash, Scheme) to intelligently convert JPEG spectrums to PNG, resulting in 93\% size reduction on average. \\
+\end{tabularx}
 
 \subsection*{Skills}
-\begin{itemize}
-\item Programming: primarily Python, but willing to work in most any language; experience with assembly and microcontrollers; interest in good practices regarding modularity, portability, and version control (Git, Mercurial, SVN). Samples: \href{http://github.com/jalan}{github.com/jalan}
-\item Analysis: math, statistics, optimization, estimation, machine learning.
-\item Web development: CSS, HTML, JavaScript, Django framework, Pyramid framework.
-\item Research: intelligently approach new and open-ended problems, quickly get up to speed.
-\item Operating systems: Linux (RHEL, Slackware, Gentoo), Solaris, AIX, HP-UX, Windows.
-\item Documentation: ability to write clear articles and presentations; experience with \LaTeX, image creation with SVG, and editing.
-\item Signal processing: digital filtering, image enhancement, spectrum analysis.
-\item Testing: break software, create detailed bug reports, suggest and implement improvements, automate testing, evaluate performance and reliability.
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+Programming: primarily Python, but willing to work in most any language; experience with assembly and microcontrollers; interest in best practices regarding modularity, portability, and version control (Git, Mercurial, SVN). Samples: \href{http://github.com/jalan}{github.com/jalan} \\
+Web development: CSS, HTML, JavaScript, Django framework, Pyramid framework. \\
+Analysis: math, statistics, optimization, estimation, machine learning. \\
+Research: intelligently approach new and open-ended problems, quickly get up to speed. \\
+Testing: automated unit and functional testing, detailed bug reports, profiling for performance and reliability. \\
+Documentation: ability to write clear articles and presentations; experience with \LaTeX, image creation with SVG, and editing. \\
+Signal processing: digital filtering, image enhancement, spectrum analysis. \\
+Amazon Web Services, Docker, PostgreSQL. \\
+Django, Redis, Celery, MySQL, Bootstrap, JQuery, Handlebars, paramiko. \\
+\end{tabularx}
 
 \subsection*{Education}
-\begin{itemize}
-\item MS, Electrical and Computer Engineering \hfill Ohio State University ~~~~~~~~~ 2012
-\item BS, Electrical and Computer Engineering \hfill Ohio State University ~~~~~~~~~ 2009
-\end{itemize}
-
-My education includes graduate-level coursework in
-\begin{itemize}
-\item Electrical engineering (image processing, communications, random signal analysis)
-\item Computer engineering (digital logic, interfacing and protocols)
-\item Computer science (numerical methods, machine learning, pattern recognition)
-\item Mathematics (vector spaces)
-\item Statistics (applied regression analysis)
-\item Linguistics (mathematical methods)
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{\bullet} l X c X r @{} }
+MS, Electrical and Computer Engineering && Ohio State University && 2012 \\
+BS, Electrical and Computer Engineering && Ohio State University && 2009 \\
+\end{tabularx}
+\newline \\
+Education includes graduate-level coursework in electrical engineering, computer engineering, computer science, mathematics, statistics, and linguistics
 
 \subsection*{Publications}
-\begin{itemize}
-\item ``Dual-scan acquisition for accelerated continuous-wave EPR oximetry.''
-{\it Journal of Magnetic Resonance}, 2012.
-\item ``Optimization of magnetic field sweep and field modulation amplitude for continuous-wave EPR oximetry.''
-{\it Journal of Magnetic Resonance}, 2011.
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+``Dual-scan acquisition for accelerated continuous-wave EPR oximetry.'' {\it Journal of Magnetic Resonance}, 2012. \\
+``Optimization of magnetic field sweep and field modulation amplitude for continuous-wave EPR oximetry.'' {\it Journal of Magnetic Resonance}, 2011. \\
+\end{tabularx}
 
 \subsection*{Community}
-\begin{itemize}
-\item Rebuilding Together Central Ohio                                                   \hfill 2013
-\item Maintenance of the IPS Lab website: \href{http://ece.osu.edu/ips}{ece.osu.edu/ips} \hfill 2010--2012
-\item Contributor to open-source projects                                                \hfill 2007--~~~~~~~
-\item IEEE                                                                               \hfill 2007--~~~~~~~
-\item Project Gutenberg Distributed Proofreaders                                         \hfill 2007--2008
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{\bullet} X l @{} }
+Rebuilding Together Central Ohio                                                   & \multicolumn{1}{r @{}}{2013} \\
+Maintenance of the IPS Lab website, \href{http://ece.osu.edu/ips}{ece.osu.edu/ips} & 2010--2012 \\
+Contributor to open-source projects                                                & 2007--now  \\
+IEEE                                                                               & 2007--now  \\
+Project Gutenberg Distributed Proofreaders                                         & 2007--2008 \\
+\end{tabularx}
 
 \subsection*{Honors}
-\begin{itemize}
-\item Ohio State University Fellow \hfill 2009--2010
-\item National Merit Scholar       \hfill 2005
-\end{itemize}
+\begin{tabularx}{\textwidth}{ @{\bullet} X l @{} }
+Ohio State University Fellow & 2009 \\
+National Merit Scholar       & 2005 \\
+\end{tabularx}
 
 \end{document}
