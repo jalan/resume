@@ -17,11 +17,19 @@
 
 \usepackage{tabularx}
 
-% Standard margins
-\usepackage[margin=1in]{geometry}
-
 % Small bullet points
 \renewcommand{\bullet}{$\vcenter{\hbox{~\huge$\cdot$~}}$}
+
+% Custom environments for alignment
+\newenvironment{jobhead}
+{\tabularx{\textwidth}{ @{} l X r @{} }}
+{\endtabularx}
+\newenvironment{bullets}
+{\tabularx{\textwidth}{ @{\bullet} X @{} }}
+{\endtabularx}
+
+% Standard margins
+\usepackage[margin=1in]{geometry}
 
 % Don't indent paragraphs
 \setlength{\parindent}{0pt}
@@ -39,55 +47,55 @@
 
 \subsection*{Work Experience}
 
-\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
-\textbf{Senior Software Engineer}, UberResearch && Bethesda, MD && 2015--now \\
-\end{tabularx}
+\begin{jobhead}
+\textbf{Senior Software Engineer}, UberResearch && Bethesda, MD ~~ 2015--now \\
+\end{jobhead}
 On-site at the National Heart, Lung, and Blood Institute (NHLBI) \\
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{bullets}
 Developing and maintaining a custom install of the Reviewer Finder web application along with associated web services and data pipelines. \\
 Creating a new document enrichment web service. \\
-\end{tabularx}
+\end{bullets}
 On-site at the NIH's Office of Portfolio Analysis (OPA) \\
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{bullets}
 Developed web applications, including OPA's first public app, iCite (\href{https://icite.od.nih.gov}{icite.od.nih.gov}), which includes 100\% automated test coverage on the backend. \\
 Implemented the Relative Citation Ratio, a field-normalized metric for assessing impact of scientific articles, now in use at NIH and across Digital Science companies. \\
-\end{tabularx}
+\end{bullets}
 
-\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
-\textbf{Software Engineer}, Nationwide Insurance (contract) && Columbus, OH && 2013--2015 \\
-\end{tabularx}
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{jobhead}
+\textbf{Software Engineer}, Nationwide Insurance (contract) && Columbus, OH ~~ 2013--2015 \\
+\end{jobhead}
+\begin{bullets}
 Automated updates for thousands of Red Hat Enterprise Linux servers. \\
 Control via SSH, with no software installation required on the remote hosts. \\
 Equivalent functionality via command-line tools or a web app, including REST API. \\
-\end{tabularx}
+\end{bullets}
 
-\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
-\textbf{Software Engineer}, IBM && Columbus, OH && 2012--2013 \\
-\end{tabularx}
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{jobhead}
+\textbf{Software Engineer}, IBM && Columbus, OH ~~ 2012--2013 \\
+\end{jobhead}
+\begin{bullets}
 Installed, set up, and managed application servers, databases, and directory servers. \\
 Tested applications, including automation development and performance testing. \\
-\end{tabularx}
+\end{bullets}
 
-\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
-\textbf{Research Associate}, Ohio State University && Columbus, OH && 2009--2012 \\
-\end{tabularx}
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{jobhead}
+\textbf{Research Associate}, Ohio State University && Columbus, OH ~~ 2009--2012 \\
+\end{jobhead}
+\begin{bullets}
 Optimized medically relevant EPR (electron paramagnetic resonance) experiments. \\
 Taught undergraduate labs: communication laboratory, microcontroller laboratory. \\
-\end{tabularx}
+\end{bullets}
 
-\begin{tabularx}{\textwidth}{ @{} l X c X r @{} }
-\textbf{Software Tester}, Chemical Abstracts Service && Columbus, OH && 2007--2009 \\
-\end{tabularx}
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{jobhead}
+\textbf{Software Tester}, Chemical Abstracts Service && Columbus, OH ~~ 2007--2009 \\
+\end{jobhead}
+\begin{bullets}
 Disassembled with OllyDbg to discover a password recovery vulnerability. \\
 Wrote scripts (Bash, Scheme) to intelligently convert JPEG spectrums to PNG, resulting in 93\% size reduction on average. \\
-\end{tabularx}
+\end{bullets}
 
 \subsection*{Skills}
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{bullets}
 Programming: primarily Python, but willing to work in most any language; experience with assembly and microcontrollers; interest in best practices regarding modularity, portability, and version control (Git, Mercurial, SVN). Samples: \href{http://github.com/jalan}{github.com/jalan} \\
 Web development: CSS, HTML, JavaScript, Django framework, Pyramid framework. \\
 Analysis: math, statistics, optimization, estimation, machine learning. \\
@@ -97,7 +105,7 @@ Documentation: ability to write clear articles and presentations; experience wit
 Signal processing: digital filtering, image enhancement, spectrum analysis. \\
 Amazon Web Services, Docker, PostgreSQL. \\
 Django, Redis, Celery, MySQL, Bootstrap, JQuery, Handlebars, paramiko. \\
-\end{tabularx}
+\end{bullets}
 
 \subsection*{Education}
 \begin{tabularx}{\textwidth}{ @{\bullet} l X c X r @{} }
@@ -108,10 +116,10 @@ BS, Electrical and Computer Engineering && Ohio State University && 2009 \\
 Education includes graduate-level coursework in electrical engineering, computer engineering, computer science, mathematics, statistics, and linguistics
 
 \subsection*{Publications}
-\begin{tabularx}{\textwidth}{ @{\bullet} X @{} }
+\begin{bullets}
 ``Dual-scan acquisition for accelerated continuous-wave EPR oximetry.'' {\it Journal of Magnetic Resonance}, 2012. \\
 ``Optimization of magnetic field sweep and field modulation amplitude for continuous-wave EPR oximetry.'' {\it Journal of Magnetic Resonance}, 2011. \\
-\end{tabularx}
+\end{bullets}
 
 \subsection*{Community}
 \begin{tabularx}{\textwidth}{ @{\bullet} X l @{} }
