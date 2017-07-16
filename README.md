@@ -1,3 +1,2 @@
-# resume
-
-This is the LaTeX source for my resume.
+[![](page_1.png)](page_1.png)
+[![](page_2.png)](page_2.png)
