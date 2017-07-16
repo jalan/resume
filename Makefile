@@ -15,6 +15,4 @@ clean:
 	rm -f resume.aux
 	rm -f resume.log
 	rm -f resume.out
-	rm -f page_1.png
-	rm -f page_2.png
 	rm -f resume.pdf
