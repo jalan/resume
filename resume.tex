@@ -41,24 +41,58 @@
 \begin{document}
 
 % Just name and email, since this is online
-\textbf{\large Jason Alan Palmer} \hfill \href{mailto:jalanpalmer@gmail.com}{jalanpalmer@gmail.com}
+\centerline{\textbf{\large Jason Alan Palmer}}
 
 \rule{\textwidth}{1pt}
 
-\subsection*{Work Experience}
+\href{mailto:jalanpalmer@gmail.com}{jalanpalmer@gmail.com}
+\hfill
+\href{https://www.linkedin.com/in/jalanpalmer}{linkedin.com/in/jalanpalmer}
+
+
+\subsection*{Experience}
 
 \begin{jobhead}
-\textbf{Senior Software Engineer}, UberResearch && Bethesda, MD ~~ 2015--now \\
+\textbf{Senior Backend Engineer}, Percolate && Denver, CO ~~ 2019--~~~~~~ \\
+\end{jobhead}
+\begin{bullets}
+Integrating with Okta to provide our users with seamless access to external apps. \\
+Maintaining and extending core data models (users, roles, and capabilities). \\
+\end{bullets}
+
+\begin{jobhead}
+\textbf{Senior Software Engineer}, Dish Network && Denver, CO ~~ 2018--2019 \\
+\end{jobhead}
+Narrowband Internet of Things (NB IoT) \\
+\begin{bullets}
+Designed and coded Go microservices to process data from IoT devices. \\
+Created CI / CD pipelines in GitLab to test, build, vet, and deploy. \\
+Led adoption of AWS Elastic Container Service. \\
+\end{bullets}
+Sling TV \\
+\begin{bullets}
+Created scalable gRPC microservices and an HTTP frontend. \\
+Designed libraries to encourage standard behavior across our ecosystem. \\
+Maximized observability via metric reporting, distributed tracing, and careful logging. \\
+\end{bullets}
+Legacy application maintenance \\
+\begin{bullets}
+Prioritized the most relevant issues to reduce production support requirements. \\
+Reduced daily error messages from 500,000 to 1000. \\
+\end{bullets}
+
+\begin{jobhead}
+\textbf{Senior Software Engineer}, UberResearch && Bethesda, MD ~~ 2015--2018 \\
 \end{jobhead}
 On-site at the National Heart, Lung, and Blood Institute (NHLBI) \\
 \begin{bullets}
-Developing and maintaining a custom install of the Reviewer Finder web application along with associated web services and data pipelines. \\
-Creating a new asynchronous web service for enriching scientific documents. \\
-Scaling up data processing by a factor of 100. \\
+Developed and maintained a custom install of Dimensions for our biggest client. \\
+Created a new asynchronous web service for enriching scientific documents. \\
+Scaled up data processing by a factor of 100. \\
 \end{bullets}
 On-site at the NIH's Office of Portfolio Analysis (OPA) \\
 \begin{bullets}
-Developed web applications, including OPA's first public app, iCite (\href{https://icite.od.nih.gov}{icite.od.nih.gov}), which includes 100\% automated test coverage on the backend. \\
+Developed web applications, including OPA's first public app, iCite (\href{https://icite.od.nih.gov}{icite.od.nih.gov}), with 100\% automated test coverage on the backend. \\
 Implemented the Relative Citation Ratio, a field-normalized metric for assessing impact of scientific articles, now in use at NIH and across Digital Science companies. \\
 \end{bullets}
 
@@ -66,17 +100,17 @@ Implemented the Relative Citation Ratio, a field-normalized metric for assessing
 \textbf{Software Engineer}, Nationwide Insurance (contract) && Columbus, OH ~~ 2013--2015 \\
 \end{jobhead}
 \begin{bullets}
-Automated updates for thousands of Red Hat Enterprise Linux servers. \\
-Control via SSH, with no software installation required on the remote hosts. \\
-Equivalent functionality via command-line tools or a web app, including REST API. \\
+Automated security updates for thousands of Red Hat Enterprise Linux servers. \\
+Provided control via SSH, with no software installation required on the remote hosts. \\
+Exposed equivalent functionality via command-line or a web app, including REST API. \\
 \end{bullets}
 
 \begin{jobhead}
 \textbf{Software Engineer}, IBM && Columbus, OH ~~ 2012--2013 \\
 \end{jobhead}
 \begin{bullets}
-Installed, set up, and managed application servers, databases, and directory servers. \\
-Tested applications, including automation development and performance testing. \\
+Deployed and maintained application servers, databases, and directory servers. \\
+Developed automated performance tests based on real customer bottlenecks. \\
 \end{bullets}
 
 \begin{jobhead}
@@ -85,70 +119,57 @@ Tested applications, including automation development and performance testing. \
 \begin{bullets}
 Optimized medically relevant EPR (electron paramagnetic resonance) experiments. \\
 Taught undergraduate labs: communication laboratory, microcontroller laboratory. \\
+Published two peer-reviewed articles. \\
 \end{bullets}
 
-\subsection*{Skills and Tools}
+\pagebreak
+
+\begin{jobhead}
+\textbf{Software Engineer}, Chemical Abstracts Service && Columbus, OH ~~ 2007--2009 \\
+\end{jobhead}
 \begin{bullets}
-Programming: primarily Python, but also Go, shell, JavaScript, C-family, assembly and microcontrollers, Lisps. \href{https://github.com/jalan}{github.com/jalan} \\
-Web development: HTTP, REST APIs, CSS, HTML5, Django framework, Pyramid framework, Bootstrap, JQuery, Handlebars, Jinja, Hugo. \\
-Testing: automated unit and functional tests, statement and branch coverage, continuous integration (Travis, Shippable), manually exposing security and other complex issues. \\
-Task queues: leverage Celery and Redis, or build our own on top of PostgreSQL. \\
-Performance: profiling CPU and memory usage, improving performance via concurrency. \\
-Analysis: math, statistics, optimization, estimation, machine learning. \\
-Documentation: articles and presentations, visualizations, online help and examples. \\
-Operations: maintaining production web apps and services, zero-downtime deployments, Amazon Web Services, Docker, Compose. \\
-Signal processing: digital filtering, image enhancement, spectrum analysis. \\
+Disassembled with OllyDbg to discover a password recovery vulnerability. \\
+Intelligently converted JPEG spectrums to PNG for a 93\% size reduction. \\
+\end{bullets}
+
+\subsection*{Skills}
+\begin{bullets}
+Primary fluency in Go and Python, also experienced with C-family, assembly, shell scripts, JavaScript, Lisps. \\
+Software engineering, start to finish: gather and analyze requirements, architect a system, design and code its components, test thoroughly, document, and build an automated pipeline to deploy every commit. \\
+Specialize in backend development, but work across domains: command-line tools, text and numerical processing, front-end. \\
+Leadership: help less experienced engineers make progress, constantly refine and share best practices in multi-team meetings, learn every day. \\
+Messaging and queueing: leverage Celery and Redis, RabbitMQ, Kafka, or build our own queues in PostgreSQL. \\
+Performance: profile CPU and memory usage, add concurrency without sacrificing safety or clarity of code, optimize database queries, add caching layers. \\
+Code review: provide rapid, constructive feedback to team members; catch issues early, when they are easiest to address; provoke thoughtful discussions that we all learn from. \\
+APIs: create HTTP and gRPC APIs that are pleasant to use, and design libraries that encourage standards and speed development on new projects. \\
+Operations: maintain services, set up monitoring and alerting, perform thorough postmortems after production outages. \\
+CI / CD: automate builds, unit tests, static analysis, and integration tests. Deploy with no manual steps. \\ 
+Analysis: math, statistics, optimization, estimation, machine learning. Dig deep into new problem spaces and get up to speed quickly. \\
+Documentation: write articles, presentations, online help, and examples. \\
+Unix philosophy: favor composable and minimalist tools over large programs, removing nonessential features over adding more, and simplicity over perfection. \\
 \end{bullets}
 
 \subsection*{Education}
 \begin{tabularx}{\textwidth}{ @{\bullet} l X c X r @{} }
-MS, Electrical and Computer Engineering && Ohio State University && 2012 \\
-BS, Electrical and Computer Engineering && Ohio State University && 2009 \\
+MS, Electrical and Computer Engineering && Ohio State University \\
+BS, Electrical and Computer Engineering && Ohio State University \\
 \end{tabularx}
-\newline \\
-Education includes graduate-level coursework in \\
-\begin{bullets}
-Electrical engineering (image processing, communications, random signal analysis) \\
-Computer engineering (digital logic, interfacing and protocols) \\
-Computer science (numerical methods, machine learning, pattern recognition) \\
-Mathematics (vector spaces) \\
-Statistics (applied regression analysis) \\
-Linguistics (mathematical methods) \\
-\end{bullets}
-
-\subsection*{Publications}
-\begin{bullets}
-``Dual-scan acquisition for accelerated continuous-wave EPR oximetry.''
-Jason Palmer, Lee C Potter, David H Johnson, Jay L Zweier, Rizwan Ahmad.
-{\it Journal of Magnetic Resonance}, 2012. \\
-``Optimization of magnetic field sweep and field modulation amplitude for continuous-wave EPR oximetry.''
-Jason Palmer, Lee C Potter, Rizwan Ahmad.
-{\it Journal of Magnetic Resonance}, 2011. \\
-\end{bullets}
 
 \subsection*{Community}
-\begin{tabularx}{\textwidth}{ @{\bullet} X l @{} }
-Rebuilding Together Central Ohio                                                   & \multicolumn{1}{r @{}}{2013} \\
-Maintenance of the IPS Lab website, \href{http://ece.osu.edu/ips}{ece.osu.edu/ips} & 2010--2012 \\
-IEEE                                                                               & 2007--now  \\
-Project Gutenberg Distributed Proofreaders                                         & 2007--2008 \\
-Contributor to open-source projects                                                & 2007--now  \\
-\end{tabularx}
-\newline \\
-Contributions include
-	Can I use,
+\begin{bullets}
+Open source: when I find an issue, I investigate and try to fix it.
+This has led to contributions to
+	caniuse.com,
 	Django REST framework,
 	GNU Octave,
 	go-sdl2,
 	poppler,
 	pyramid\_exclog,
-	Wine,
-and various personal projects.
-
-\subsection*{Honors}
-\begin{tabularx}{\textwidth}{ @{\bullet} X l @{} }
-Ohio State University Fellow & 2009 \\
-National Merit Scholar       & 2005 \\
-\end{tabularx}
+	and
+	Wine.
+It is a great learning experience and the best way to give back to a community we all benefit from.
+I am also the author of a Python library with over 10,000 downloads per month. See \href{https://github.com/jalan}{github.com/jalan} \\
+Attend local programming meetups and major conferences such as GopherCon. \\
+\end{bullets}
 
 \end{document}
